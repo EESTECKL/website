@@ -1,0 +1,29 @@
+<?php 
+if(!isset($_COOKIE['admin'])) 
+    {
+    header("Location: http://www.uni-kl.de/eestec/index.php");
+    die;
+    }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Admin page</title>
+    <link href="include/css/stil.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="glavni_okvir">
+    <div id="menu">
+    <div id="menu_sadrzaj_omotac">
+        <div id="menu_sadrzaj">
+            <ul>
+                <li><a href="article.php">Articles</a></li>
+                <li><a href="photo.php">Photos</a></li>
+                <li><a href="gallery.php">Galleries</a></li>
+                <li><a href="video.php">Videos</a></li>
+                <li><a href="member.php">Members</a></li>
+            </ul>
+    </div>
+    </div>

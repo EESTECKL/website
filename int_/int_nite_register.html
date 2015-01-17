@@ -1,0 +1,109 @@
+﻿ <h3>Event Registration Form:</h3>
+
+<form name="register" action="" onsubmit="return validateForm()" method="post">
+    <table class="registration">
+        <tr><td>First name / vorname:</td>
+        <td><input type="text" name="firstName" size="50" maxlength="100"/></td>
+        <td>*</td>
+        </tr>
+        <tr><td>Middle name / zweiter vorname:</td>
+        <td><input type="text" name="mName" size="50" maxlength="100"/></td>
+        <td></td>
+        </tr>
+        <tr><td>Last name / nachname:</td> 
+        <td><input type="text" name="lastName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Email:</td>
+        <td><input type="text" name="email" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Number of team members / Anzahl der Teammitglied: </td>
+        <td><select name="teamMembNumber">
+		<option value="1">1</option>
+		<option value="1">2</option>
+		<option value="1">3</option>
+		<option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+		</select>
+        </td><td>*</td></tr>
+
+        <tr><td>Country / Land:</td>
+        <td><input type="text" name="country" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Team Name / Teamname:</td>
+        <td><input type="text" name="teamName" size="50" maxlength="100"/></td>
+        <td>*</td>
+        </tr>
+        <tr><td><h4>Categories to compete in (number not limited):</h4></td>
+            <td></td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="spicy" value="spicy">
+                    The spiciest meal         
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="vegetarian" value="vegetarian">
+                    The best vegetarian meal         
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="salty" value="salty">
+                    The best salty meal         
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="sweet" value="sweet">
+                     The best sweet meal        
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="decoration" value="decoration">
+                     The best decorated meal        
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="story" value="story">
+                     Meal with the most interesting background story        
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="exotic" value="exotic">
+                     The most exotic meal        
+            </td>
+            <td></td>
+        </tr>
+        <tr><td>Traditional song / Traditionelles Lied (Youtube link):</td>
+        <td><input type="text" name="songLink" size="50" maxlength="100"/></td>
+        <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="rules" value="rules">
+                    I accept the <a href="http://www.uni-kl.de/eestec/int/int_nite_rules_and_regulations.pdf">rules and regulations</a> / Ich akzeptiere die <a href="http://www.uni-kl.de/eestec/int/int_nite_rules_and_regulations.pdf"> AGB</a>.         
+            </td>
+            <td>*</td>
+        </tr>
+        
+    </table>
+
+    <button type="submit" name="submit" value="submit">Submit</button>
+    <p>* Information required </p>
+    <p>First name, Last name and Email are refering to team representative which will be contacted for further arrangements of the event.</p>
+    <p>All meals automatically enter in the competition for the best overall meal.</p>
+</form>

@@ -1,0 +1,53 @@
+<form name="register" action="" onsubmit="return validateForm()" method="post">
+    <table class="registration">
+        <tr><td>First name / vorname:</td>
+        <td><input type="text" name="firstName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Last name / nachname:</td>
+        <td><input type="text" name="lastName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Email:</td>
+        <td><input type="text" name="email" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>number of team members / Anzahl der Teammitglied: </td>
+        <td><select name="num_mem">
+		<option value="1">1</option>
+		<option value="1">2</option>
+		<option value="1">3</option>
+		<option value="1">4</option>
+		</select>
+</td><td>*</td></tr>
+
+        <tr><td>Country / Land:</td>
+        <td><input type="text" name="country" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Team Name:</td>
+        <td><input type="text" name="team_name" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Food Name / Namen der Speisen:</td>
+        <td><input type="text" name="food_name" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Food Type (Sweet,Spicy,etc) / Art(scharf,süß, usw.):</td>
+        <td><input type="text" name="food_type" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Food Description / Beschreibung:</td>
+        <td><textarea name="food_desc" rows="4" cols = "50" maxlength="200">Food Description...</textarea></td>
+        <td>*</td></tr>
+<tr><td>Vegetarian / vegetarisch: </td>
+        <td><input type="radio" name="veg" value="1">Yes</input>
+	 <input type="radio" name="veg" value="2">No</input></td><td>*</td></tr>
+
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="rules" value="rules">
+                    I accept the <a href="http://www.uni-kl.de/eestec/int_nite_rules_and_regulations.pdf">rules and regulations</a> / Ich akzeptiere die <a href="http://www.uni-kl.de/eestec/int_nite_rules_and_regulations.pdf"> AGB</a>. 
+                </input>
+            </td>
+            <td>*</td>
+        </tr>
+    </table>
+
+    <button type="submit" name="submit" value="submit">Submit</button>
+    <button type="submit" name="reset" value="reset">Reset</button>
+    <p>* Information required </p>
+</form>

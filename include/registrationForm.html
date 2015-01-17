@@ -1,0 +1,41 @@
+<form name="register" action="" onsubmit="return validateForm()" method="post">
+    <table class="registration">
+        <tr><td>First name:</td>
+        <td><input type="text" name="firstName" size="45" maxlength="45"/></td>
+        <td>*</td></tr>
+        <tr><td>Middle name:</td>
+        <td><input type="text" name="mName" size="45" maxlength="45"/></td>
+        <td></td></tr>
+        <tr><td>Last name:</td>
+        <td><input type="text" name="lastName" size="45" maxlength="45"/></td>
+        <td>*</td></tr>
+        <tr><td>Email:</td>
+        <td><input type="text" name="email" size="45" maxlength="45"/></td>
+        <td>*</td></tr>
+        <tr><td>Password:</td>
+        <td><input type="password" name="pass" size="45" maxlength="45"/></td>
+        <td>*</td></tr>
+        <tr><td>Re-type password:</td>
+        <td><input type="password" name="repass" size="45" maxlength="45"/></td>
+        <td>*</td></tr>
+        <tr><td>Gender:</td>
+        <td><input type="radio" name="gender" value="1">Female</input>
+        <input type="radio" name="gender" value="2">Male</input></td><td></td></tr>
+        <tr><td>University:</td>
+        <td><input type="radio" name="uni" value="1">TU-kaiserslautern</input>
+        <input type="radio" name="uni" value="2">FH-kaiserslautern</input></td>
+          <td>*</td></tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="rules" value="rules">
+                    I accept the <a href="http://www.uni-kl.de/eestec/rules_and_regulations.pdf">rules and regulations</a>. 
+                </input>
+            </td>
+            <td>*</td>
+        </tr>
+    </table>
+
+    <button type="submit" name="submit" value="submit">Submit</button>
+    <button type="submit" name="reset" value="reset">Reset</button>
+    <p>* Information required </p>
+</form>

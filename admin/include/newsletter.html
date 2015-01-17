@@ -1,0 +1,52 @@
+<form name="newsletter" action="" onsubmit="return validateNewsLetter()" method="post">
+    <table class="newsletterTable">
+        <tr>
+            <td>Send email to all members:</td>
+            <td><input type="checkbox" name="allMembers" value="allMembers"/>
+                     
+            </td>
+        </tr>
+	<tr><td>Email:</td>
+        <td><input type="text" name="emailAddress" size="100" maxlength="100" value=""/></td>
+
+        <tr><td>subject:</td>
+        <td><input type="text" name="subject" size="100" maxlength="100" value="EESTEC Kaiserslautern News-letter"/></td>
+
+	 <tr><td>Content:</td>
+	 <td><textarea name="content" rows="20" cols="100">
+Dear Member,<br />
+This is a auto-generated email to inform you about our latest events, projects and workshops.<br/><br/>
+
+<strong>News 1</strong><br/>
+Details<br/><br/>
+
+<strong>News 2</strong><br/>
+Details<br/><br/>
+
+
+Regards,<br/>
+EESTEC Kaiserslautern<br/><br/>
+
+<a href="https://www.facebook.com/EestecTUKaiserslautern?fref=ts">"Like"</a> us on Facebook to get latest updates!<br/>
+<a href="https://www.facebook.com/groups/236914356449170/?fref=ts">Join</a> our Facebook group to participate in discussion<br/>
+<a href="https://twitter.com/EESTEC_TUKL">Follow</a> us on Twitter<br/>
+
+
+<br/><br/>--------------------------------<br/>
+If you don't wish to receive any further emails from us, please write a email to eestec@rhrk.uni-kl.de with subject "unsubscribe" from your registered email address. Please give us 2-3 weeks to process your request. Thankyou.
+	 </textarea></td>
+
+        <tr><td>Attachment1:</td>
+        <td><input type="text" name="attachment1" size="100" maxlength="100" value="images/logo.png"/></td>
+
+        <tr><td>Attachment2:</td>
+        <td><input type="text" name="attachment2" size="100" maxlength="100" value="images/poster.jpg"/></td>
+
+        <tr><td>Attachment3:</td>
+        <td><input type="text" name="attachment3"/></td>
+
+    </table>
+
+    <button type="submit" name="submit" value="submit">Submit</button>
+    <button type="submit" name="reset" value="reset">Reset</button>
+</form>

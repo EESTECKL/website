@@ -1,0 +1,73 @@
+﻿ <h3>Registrierungs Formular für das Event:</h3>
+
+<form name="register" action="" onsubmit="return validateForm()" method="post">
+    <table class="registration">
+        <tr><td>Vorname:</td>
+        <td><input type="text" name="firstName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Nachname:</td> 
+        <td><input type="text" name="lastName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Email:</td>
+        <td><input type="text" name="email" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Geschlecht: </td>
+        <td><select name="gender">
+		<option value="1">weiblich</option>
+		<option value="2">männlich</option>
+		</select>
+</td><td>*</td></tr>
+
+        <tr><td>Telefon:</td>
+        <td><input type="text" name="phone" size="50" maxlength="100"/></td>
+        <td></td></tr>
+        <tr>
+        <td>angestrebter Abschluss:</td>
+            <td>
+            <input type="radio" name="veg" value="Bachelor">Bachelor</input>
+            <input type="radio" name="veg" value="Diploma">Diplom</input>
+            <input type="radio" name="veg" value="Master">Mastert</input>
+            <input type="radio" name="veg" value="Phd">Doktor</input></td>
+            <td>*</td>
+        </tr>
+        <tr><td>Programmier-Erfahrung:</td>
+        <td><textarea name="ProgrammingExperience" rows="4" cols = "50" maxlength="200">C und C++...</textarea></td>
+        <td>*</td>
+        </tr>
+        <tr><td>Erfahrung mit Embedded Systemen:</td>
+        <td><textarea name="EmbeddedExperience" rows="4" cols = "50" maxlength="200">Embedded Systeme; Mikro-Elektronik, Sensoren...</textarea></td>
+        <td>*</td>
+        </tr>
+        <tr><td>Erfahrung mit Mindstorms Lego Robot:</td>
+        <td><textarea name="LegoRobotExperience" rows="4" cols = "50" maxlength="200">Falls überhaupt...</textarea></td>
+        <td></td>
+        </tr>
+        <tr><td>Motivation:</td>
+        <td><textarea name="Motivation" rows="4" cols = "50" maxlength="500">Ich will unbedingt teilnehmen, weil...</textarea></td>
+        <td>*</td>
+        </tr>
+        <tr><td>Besonderheiten bei der Nahrung:</td>
+        <td><textarea name="SpecialFoodDemands" rows="4" cols = "50" maxlength="200">Vegetarier, Veganer, Allergien...</textarea></td>
+        <td>*</td></tr>
+        <tr>
+            <td>Aufgrund besonderer Gründe, zum Beispiel Ramadan:</td>
+            <td><input type="checkbox" name="MealsNotRequired" value="rules">
+                    Ich benötige tagsüber keine Verpflegung
+                </input>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="rules" value="rules">
+                    Ich akzeptiere die <a href="http://www.uni-kl.de/eestec/int_nite_rules_and_regulations.pdf">Regeln und Bedingungen</a>. 
+                </input>
+            </td>
+            <td>*</td>
+        </tr>
+    </table>
+
+    <button type="submit" name="submit" value="submit">Absenden</button>
+    <button type="submit" name="reset" value="reset">zurücksetzten</button>
+    <p>* Information wird benötigt </p>
+</form>

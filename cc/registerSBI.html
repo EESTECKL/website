@@ -1,0 +1,53 @@
+﻿ <h3>Event Registration Form:</h3>
+
+<form name="register" action="" onsubmit="return validateForm()" method="post">
+    <table class="registration">
+        <tr><td>First name:</td>
+        <td><input type="text" name="firstName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Last name:</td> 
+        <td><input type="text" name="lastName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Email:</td>
+        <td><input type="text" name="email" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+
+        <tr><td>Phone:</td>
+        <td><input type="text" name="phone" size="50" maxlength="100"/></td>
+        <td></td></tr>
+
+        <tr>
+        <td>Level of study:</td>
+            <td>
+            <input type="radio" name="lvlOfStudy" value="Bachelor">Bachelor</input>
+            <input type="radio" name="lvlOfStudy" value="Diploma">Diploma</input>
+            <input type="radio" name="lvlOfStudy" value="Master">Master</input>
+            <input type="radio" name="lvlOfStudy" value="Phd">PhD</input></td>
+            <td>*</td>
+        </tr>
+        <tr><td>Experience with JAVA:</td>
+        <td><textarea name="javaExp" rows="4" cols = "50" maxlength="200">If any...</textarea></td>
+        <td></td>
+        </tr>
+        <tr><td>Experience with Android:</td>
+        <td><textarea name="androidExp" rows="4" cols = "50" maxlength="200">If any...</textarea></td>
+        <td></td>
+        </tr>
+        <tr><td>Special food demands:</td>
+        <td><textarea name="specialFoodDemands" rows="4" cols = "50" maxlength="200">E.g: vegetarian only, halal only...</textarea></td>
+        <td>*</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="rules" value="rules">
+                    I confirm that I will attend the event on 29.11.2014. 
+                </input>
+            </td>
+            <td>*</td>
+        </tr>
+    </table>
+
+    <button type="submit" name="submit" value="submit">Submit</button>
+    <button type="submit" name="reset" value="reset">Reset</button>
+    <p>* Information required </p>
+</form>

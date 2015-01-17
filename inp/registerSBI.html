@@ -1,0 +1,89 @@
+﻿ <h3>Event Registration Form:</h3>
+
+<form name="register" action="" onsubmit="return validateForm()" method="post">
+    <table class="registration">
+        <tr><td>First name:</td>
+        <td><input type="text" name="firstName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Last name:</td> 
+        <td><input type="text" name="lastName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Email:</td>
+        <td><input type="text" name="email" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <!--tr><td>Gender: </td>
+        <td><select name="gender">
+		<option value="1">Female</option>
+		<option value="2">Male</option>
+		</select>
+</td><td>*</td></tr-->
+
+        <tr><td>Phone:</td>
+        <td><input type="text" name="phone" size="50" maxlength="100"/></td>
+        <td></td></tr>
+        <tr>
+            <td>I want to participate in the chess competition:</td>
+            <td><input type="checkbox" name="chessCompetition" value="1">
+                    
+                </input>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>I want to prepare food in a shape of the peace sing and bring it:</td>
+            <td><input type="checkbox" name="bringFood" value="1">
+                    Please refer to <a href="faq.php">FAQ</a> section about refund option
+                </input>
+            </td>
+            <td>!</td>
+        </tr>
+        <tr>
+            <td>I would like to help you in making chocolate cookies:</td>
+            <td><input type="checkbox" name="makeCookies" value="1">
+                    
+                </input>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>I would like to help you in making pizza:</td>
+            <td><input type="checkbox" name="makePizza" value="1">
+                    
+                </input>
+            </td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>I will attend the barbecue (see the agenda):</td>
+            <td><input type="checkbox" name="bbq" value="1">
+                    
+                </input>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+        <td>Level of study:</td>
+            <td>
+            <input type="radio" name="lvlOfStudy" value="Bachelor">Bachelor</input>
+            <input type="radio" name="lvlOfStudy" value="Diploma">Diploma</input>
+            <input type="radio" name="lvlOfStudy" value="Master">Master</input>
+            <input type="radio" name="lvlOfStudy" value="Phd">PhD</input></td>
+            <td>*</td>
+        </tr>
+        <tr><td>Special food demands:</td>
+        <td><textarea name="SpecialFoodDemands" rows="4" cols = "50" maxlength="200">Vegetarian only, halal only...</textarea></td>
+        <td>*</td></tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="rules" value="rules">
+                    I confirm that I will attend the event on 21st of September.</a>. 
+                </input>
+            </td>
+            <td>*</td>
+        </tr>
+    </table>
+
+    <button type="submit" name="submit" value="submit">Submit</button>
+    <button type="submit" name="reset" value="reset">Reset</button>
+    <p>* Information required </p>
+</form>

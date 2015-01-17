@@ -1,0 +1,81 @@
+﻿ <h3>Event Registration Form:</h3>
+
+<form name="register" action="" onsubmit="return validateForm()" method="post">
+    <table class="registration">
+        <tr><td>First name:</td>
+        <td><input type="text" name="firstName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Last name:</td> 
+        <td><input type="text" name="lastName" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <tr><td>Email:</td>
+        <td><input type="text" name="email" size="50" maxlength="100"/></td>
+        <td>*</td></tr>
+        <!--tr><td>Gender: </td>
+        <td><select name="gender">
+		<option value="1">Female</option>
+		<option value="2">Male</option>
+		</select>
+</td><td>*</td></tr-->
+
+        <tr><td>Phone:</td>
+        <td><input type="text" name="phone" size="50" maxlength="100"/></td>
+        <td></td></tr>
+        <tr>
+        <td>Level of study:</td>
+            <td>
+            <input type="radio" name="lvlOfStudy" value="Bachelor">Bachelor</input>
+            <input type="radio" name="lvlOfStudy" value="Diploma">Diploma</input>
+            <input type="radio" name="lvlOfStudy" value="Master">Master</input>
+            <input type="radio" name="lvlOfStudy" value="Phd">PhD</input></td>
+            <td>*</td>
+        </tr>
+        <tr><td>Programming experience:</td>
+            <td><textarea id="ProgrammingExperience" name="ProgrammingExperience" rows="4" cols = "50" maxlength="200">C and C++...</textarea></td>
+        <td>*</td>
+        </tr>
+        <tr><td>Embedded experience:</td>
+            <td><textarea id="EmbeddedExperience" name="EmbeddedExperience" rows="4" cols = "50" maxlength="200">Embedded systems; micro electronics, sensors...</textarea></td>
+        <td>*</td>
+        </tr>
+        <tr><td>Mindstorms Lego Robot Experience:</td>
+        <td><textarea name="LegoRobotExperience" rows="4" cols = "50" maxlength="200">If any...</textarea></td>
+        <td></td>
+        </tr>
+        <tr><td>Motivation:</td>
+        <td><textarea name="Motivation" rows="4" cols = "50" maxlength="500">I wish to participate because...</textarea></td>
+        <td>*</td>
+        </tr>
+        <tr><td>Special food demands:</td>
+        <td><textarea name="SpecialFoodDemands" rows="4" cols = "50" maxlength="200">Vegetarian only, halal only...</textarea></td>
+        <td>*</td></tr>
+        <tr>
+            <td>You will attend the barbecue (see the agenda):</td>
+            <td><input type="checkbox" name="bbq" value="1">
+                    Yes.
+                </input>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>If because of some reason (e.g. Ramadan):</td>
+            <td><input type="checkbox" name="MealsNotRequired" value="1">
+                    I DON'T require meals during the day.
+                </input>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="rules" value="rules">
+                    I confirm that I will attend the event on 26th and 27th of July</a>. 
+                </input>
+            </td>
+            <td>*</td>
+        </tr>
+    </table>
+
+    <button type="submit" name="submit" value="submit">Submit</button>
+    <button type="submit" name="reset" value="reset">Reset</button>
+    <p>* Information required </p>
+</form>
