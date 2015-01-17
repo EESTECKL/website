@@ -7,6 +7,7 @@ include 'loginSimple.php';
     ?>
 <!-- ###### -->
 </head>
+<!-- Homepage -->
 <body id="top">
 <!-- ###### -->
     <?php
